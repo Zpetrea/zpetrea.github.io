@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Clean Cutters Landscaping | Home</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Clean Cutters Landscaping provides residential and commercial landscaping services in the Hickory–Lenoir–Morganton metropolitan area of North Carolina.">
+  <meta name="keywords" content="Landscaping, Lawn Care, Hardscaping, Western NC, Charlotte landscaping">
+  <meta name="author" content="Clean Cutters Landscaping">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+  <script defer>
+    document.addEventListener("DOMContentLoaded", function() {
+      const toggle = document.getElementById('menu-toggle');
+      const nav = document.getElementById('mobile-nav');
+      toggle.addEventListener('click', () => {
+        nav.classList.toggle('active');
+      });
+    });
+  </script>
+</head>
+
+<body>
+  
+
+<header class="main-header">
+  <div class="container nav-container header-flex">
+    <div class="logo">
+      <img src="assets/logo.png" alt="Clean Cutters Logo">
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-contact">
+      <a href="tel:8283816257" class="phone-number">(828) 381-6257</a>
+      <div class="social-icons">
+        <a href="#"><img src="assets/facebook.svg" alt="Facebook"></a>
+        <a href="#"><img src="assets/LinkedIn.svg" alt="LinkedIn"></a>
+        <a href="#"><img src="assets/TikTok.svg" alt="TikTok"></a>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+
+ <section class="hero-banner">
+  <div class="hero-content">
+    <h1>Your Dream Landscape Starts Here</h1>
+    <p>Professional landscaping for homes & businesses in Western NC for 35+ years.</p>
+    <a href="contact.html" class="cta-button">Get a Free Quote</a>
+  </div>
+</section>
+
+<section class="background-decor">
+  <main class="container">
+    <section class="featured-services">
+      <h2>Our Services</h2>
+      <div class="service-grid">
+        <div class="card">
+          <img src="images/lawn-care.png" alt="Lawn Care">
+          <h3>Lawn Care</h3>
+          <p>Mowing, fertilization & weed control to keep your lawn lush and green.</p>
+        </div>
+        <div class="card">
+          <img src="images/landscape-design.png" alt="Landscape Design">
+          <h3>Landscape Design</h3>
+          <p>Custom designs to bring your outdoor space to life.</p>
+        </div>
+        <div class="card">
+          <img src="images/seasonal.png" alt="Seasonal">
+          <h3>Seasonal Maintenace</h3>
+          <p> Adjusting care practices, based on the specific needs of your lawn during each season, to maintain its health and appearance.</p>
+        </div>
+      </div>
+    </section>
+
+   
+<section class="wallpaper-break"></section>
+
+<section class="quote-bubble-section">
+      <div class="quote-bubble">
+        <h2>Request a Free Quote</h2>
+        <p>Tell us about your project and we'll get back to you with a custom quote.</p>
+        <form action="https://formspree.io/f/xanozddp" method="POST" class="styled-form" onsubmit="return handleSubmit(this)">
+  <div class="form-row">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <input type="text" name="phone" placeholder="Phone Number" required>
+    <input type="text" name="city" placeholder="City" required>
+  </div>
+  <textarea name="message" rows="5" placeholder="Tell us about your project..." required></textarea>
+
+  <!-- Honeypot field (hidden from humans) -->
+  <input type="text" name="_gotcha" style="display:none">
+
+  <button type="submit">Send</button>
+</form>
+
+<script>
+function handleSubmit(form) {
+  // Clear all form fields
+  setTimeout(() => {
+    form.reset();
+  }, 100); // delay so it doesn't interfere with submission
+
+  // Show confirmation popup
+  alert('Thank you! Your message has been submitted successfully.');
+  return true; // allow form to continue submitting
+}
+
+</script></div>
+    </section>
+
+    <section class="map-section">
+      <h2>Our Service Area</h2>
+      <p>We're proudly based in Western North Carolina.</p>
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3223.867695917055!2d-81.4346158846776!3d35.79814428016771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885142b7d01668f3%3A0x9644c552b17c5277!2s508%20S%20Main%20St%2C%20Granite%20Falls%2C%20NC%2028630%2C%20USA!5e0!3m2!1sen!2sus!4v1716300000000!5m2!1sen!2sus"
+          width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+    </section>
+  </main>
+</section>
+  
+<footer class="site-footer">
+  <div class="container footer-container">
+    <p>&copy; 2025 Clean Cutters Landscaping. All rights reserved.</p>
+    <div class="footer-contact">
+      <a href="tel:8283816257">(828) 381-6257</a>
+      <div class="social-icons">
+        <a href="#"><img src="assets/facebook.svg" alt="Facebook"></a>
+        <a href="#"><img src="assets/LinkedIn.svg" alt="LinkedIn"></a>
+        <a href="#"><img src="assets/TikTok.svg" alt="TikTok"></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

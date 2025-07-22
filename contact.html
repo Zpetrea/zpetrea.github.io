@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Contact Us | Clean Cutters Landscaping</title>
+  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Clean Cutters Landscaping provides residential and commercial landscaping services in Western North Carolina.">
+  <meta name="keywords" content="Landscaping, Lawn Care, Hardscaping, Western NC, Charlotte landscaping">
+  <meta name="author" content="Clean Cutters Landscaping">
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon"/>
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+  <script defer>
+    document.addEventListener("DOMContentLoaded", function() {
+      const toggle = document.getElementById('menu-toggle');
+      const nav = document.getElementById('mobile-nav');
+      toggle.addEventListener('click', () => {
+        nav.classList.toggle('active');
+      });
+    });
+  </script>
+
+</head>
+<body>
+  
+  
+
+<header class="main-header">
+  <div class="nav-container">
+    <div class="logo">
+      <img src="assets/logo.png" alt="Clean Cutters Logo">
+    </div>
+
+    <nav class="nav-center">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-contact">
+      <a href="tel:8283816257" class="phone-number">(828) 381-6257</a>
+      <div class="social-icons">
+        <a href="#"><img src="assets/facebook.svg" alt="Facebook"></a>
+        <a href="#"><img src="assets/LinkedIn.svg" alt="LinkedIn"></a>
+        <a href="#"><img src="assets/TikTok.svg" alt="TikTok"></a>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<section class="contact-hero split-banner">
+  <div class="contact-img-half">
+    <img src="images/contact.jpg" alt="Contact Clean Cutters">
+  </div>
+  <div class="contact-text-half">
+    <h1>Contact Us</h1>
+    <p>We’re here to help with your landscaping needs. Reach out to get started on your next outdoor project!</p>
+    <p><strong>Phone:</strong> (828) 381-6257<br>
+       <strong>Email:</strong> cleancutterslandscaping@gmail.com</p>
+  </div>
+</section>
+
+<section class="background-decor">
+  <main class="container">
+    <section class="featured-services">
+      <h1>Contact Us</h1>
+      <p>Have a question or want to schedule a consultation? Reach out to us below and we'll respond shortly.</p>
+      <form action="https://formspree.io/f/xanozddp" method="POST" class="styled-form" onsubmit="return handleSubmit(this)">
+  <div class="form-row">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <input type="text" name="phone" placeholder="Phone Number" required>
+    <input type="text" name="city" placeholder="City" required>
+  </div>
+  <textarea name="message" rows="5" placeholder="Tell us about your project..." required></textarea>
+
+  <!-- Honeypot field (hidden from humans) -->
+  <input type="text" name="_gotcha" style="display:none">
+
+  <button type="submit">Send</button>
+</form>
+
+<script>
+function handleSubmit(form) {
+  // Clear all form fields
+  setTimeout(() => {
+    form.reset();
+  }, 100); // delay so it doesn't interfere with submission
+
+  // Show confirmation popup
+  alert('Thank you! Your message has been submitted successfully.');
+  return true; // allow form to continue submitting
+}
+
+</script>
+    </section>
+  </main>
+</section>
+  
+<footer class="site-footer">
+  <div class="container footer-container">
+    <p>&copy; 2025 Clean Cutters Landscaping. All rights reserved.</p>
+    <div class="footer-contact">
+      <a href="tel:8283816257">(828) 381-6257</a>
+      <div class="social-icons">
+        <a href="#"><img src="assets/facebook.svg" alt="Facebook"></a>
+        <a href="#"><img src="assets/LinkedIn.svg" alt="LinkedIn"></a>
+        <a href="#"><img src="assets/TikTok.svg" alt="TikTok"></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
